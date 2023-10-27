@@ -1,0 +1,7 @@
+@media (max-width: 600px) {
+    .section{
+       display: flex;
+       flex-wrap: wrap;
+    }
+    
+}

@@ -1,0 +1,170 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+/* Logo */
+.logo img{
+    width: 30%;
+    margin: 10% 40% 0% 0%;    
+}
+/* Get In Touch Button */
+#getbtn{
+    border: none;
+    margin:10% 50% 0% 0%;
+    padding: 15px 40px;  
+    font-size: 20px;
+    font-weight: 500;  
+    background-color: white; 
+    border-radius: 50px;    
+
+}
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.content {
+    display: flex;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.section {
+    width: 100%;
+    height: 100%;
+    display: flex;  
+    color: white;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid white;
+}
+/* Side Section */
+span{
+    position: absolute;
+    right: 0;
+    bottom: 36.6%;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Dm Sans",sans-serif;
+    line-height: 17px;
+    color: #fff;   
+    padding: 6px 23px;
+    opacity: 1;
+    letter-spacing: .045em;
+    transform: rotate(90deg);
+    transform-origin: right top;
+    background-color: rgba(255,255,255,0);
+    -webkit-backdrop-filter: blur(7px) brightness(70%);
+    backdrop-filter: blur(7px) brightness(70%);
+    z-index: 20
+}
+/* Side Section End */
+h2 {
+
+    
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 37px;
+    font-family: "Dm Sans",sans-serif;
+}
+.para {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: "Dm Sans",sans-serif;
+}
+.button {
+    border: none;
+    opacity: 0.9;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 30px;    
+    border-radius: 20px;
+    padding: 6px 33px 7px;
+    font-family: "Dm Sans",sans-serif;    
+    background-color: rgba(0, 0, 0, 0.443);
+   
+}
+/* Side Button */
+.deepak{  
+        position: relative;
+        display: block;
+        cursor: pointer;
+        font-size: 0 !important;
+        line-height: 42px !important;
+        font-weight: 500;
+        background-color: red;
+}
+.cardinnerarea {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.disabled {
+    pointer-events: none;
+}
+.containerarea .card {
+    width: 20vw;    
+    height: 100%;
+    overflow: hidden;
+    position: relative;    
+}
+.containerarea .card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 90;
+}
+.containerarea:hover .contentBx {
+    height: 210px;
+}
+.containerarea .contentBx .size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.containerarea:hover .contentBx .size {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .5s;
+}
+
+/* Hoverlay */
+.containerarea {
+    position: relative;
+}
+
+.containerarea:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the background color and opacity as needed */
+    z-index: 1;
+}
+.card {
+    position: relative;
+    z-index: 2;
+}
+
